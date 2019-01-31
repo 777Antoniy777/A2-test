@@ -1,0 +1,69 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134" height="119.031" viewBox="0 0 134 119.031">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #b64f3a;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #ac4f3d;
+      }
+
+      .cls-4 {
+        font-size: 30px;
+        fill: #f6d98f;
+        text-anchor: middle;
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-style: italic;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#ac4f3d"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Icon" class="cls-1">
+    <path class="cls-2" d="M1227.96,51.461c-1.18,1.183,2.93,7.211,4.34,8.622l12.3,12.273,1.23,1.235c0.25,0.252-1.43,2.341-1.66,2.577a0.633,0.633,0,0,1-.89-0.027l-1.24-1.235-12.67-12.654c-1.42-1.412-6.49-5.828-7.68-4.645s3.24,6.253,4.65,7.665l12.68,12.654,1.23,1.235a0.618,0.618,0,0,1,.03.886c-0.24.236-2.33,1.913-2.58,1.662l-1.23-1.236-12.36-12.33c-1.41-1.412-7.45-5.515-8.63-4.333s0.06,2.238,1.47,3.649l16.28,16.247,3.19,3.187c3.7,3.7,8.92,4.943,13.03,3.216l78.1,78.451c1.73,1.732,4.32,1.956,5.78.5s1.23-4.046-.51-5.784l-78.58-77.949c1.74-4.1.49-9.317-3.21-13.017l-3.2-3.187-16.21-16.189C1230.2,51.522,1229.15,50.279,1227.96,51.461Z" transform="translate(-1213 -51)"/>
+    <path class="cls-2" d="M1225.32,168.835c-1.34-1.336-.96-4.109,1-6.069l63.03-63.034-3.53-3.535,1.41-1.414c1.25-1.193,35.64-32.005,43.04-35.962,3.22-1.726,5.44-1.667,6.43-.636a2.794,2.794,0,0,1,.64,3.464l-0.49.5L1231.3,167.7C1229.34,169.663,1226.65,170.171,1225.32,168.835Z" transform="translate(-1213 -51)"/>
+  </g>
+  <path class="cls-3" d="M1345,118a2,2,0,1,1-2,2A2,2,0,0,1,1345,118Zm-130,0a2,2,0,1,1-2,2A2,2,0,0,1,1215,118Z" transform="translate(-1213 -51)"/>
+  <text id="Logo" class="cls-4" x="66.882" y="77.063">Michello</text>
+</svg>
