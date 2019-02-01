@@ -16,7 +16,7 @@ var del = require("del");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/stylus/style.styl")
     .pipe(plumber())
     .pipe(stylus())
     .pipe(postcss([
@@ -80,8 +80,8 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/img/svg/sprite-*.svg", gulp.series("svgsprite", "html", "reload"));
+  gulp.watch("source/stylus/**/*.styl", gulp.series("css"));
+  gulp.watch("source/img/svg/sprite/*.svg", gulp.series("svgsprite", "html", "reload"));
   gulp.watch("source/*.html", gulp.series("html", "reload"));
 });
 
@@ -105,7 +105,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("svgdel", function() {
-  return del("build/img/svg/sprite-*.svg");
+  return del("build/img/svg/sprite/*.svg");
 });
 
 gulp.task("build" ,gulp.series(

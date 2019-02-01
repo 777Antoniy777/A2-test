@@ -1,0 +1,110 @@
+.top-menu
+  min-height 50px
+  background-color background-top-color
+  // padding-bottom 10px
+
+.top-menu .site-wrapper
+  flex()
+  justify-content space-between
+  align-items flex-start
+
+.top-menu__list
+.top-menu__user-list
+  list()
+  flex()
+  align-items center
+  flex-wrap wrap
+
+.top-menu__list
+  width 502px
+
+  &--user
+    justify-content flex-end
+    align-items flex-start
+    padding-right 0
+    li
+      margin 14px 0 0 47px
+      padding-bottom 10px
+
+  &--settings 
+    justify-content flex-start
+    align-items flex-start
+    li
+      margin-right 45px
+      padding-bottom 10px
+
+.top-menu__user-list li
+  margin 0
+  padding-bottom 0
+
+.top-menu__description
+.top-menu__user-item
+  font-family font-mont
+  font-size body-font-size - 1px
+  line-height body-line-height + 4px
+  color subtitle-color
+
+.top-menu__link
+  link()
+  font-family font-mont
+  font-size body-font-size - 1px
+  line-height body-line-height + 4px
+  color subtitle-color
+
+  &--language
+  &--currency
+    font-family font-droid
+    font-style font-italic
+    color nav-top-color
+    margin-left 1px
+
+.top-menu__description 
+  margin 14px 0 0
+
+.top-menu__list--user .top-menu__item--cart
+  position relative
+  padding 0
+  margin 0 0 0 33px
+
+  &::before
+    pseudo()
+    bottom -17px
+    left 0px
+    width 100%
+    height 17px
+    background-image linear-gradient(21deg, transparent 50%, nav-top-color 50%)
+
+  &::after
+    pseudo()
+    bottom -17px
+    left 0px
+    width 100%
+    height 17px
+    background-image linear-gradient(-21deg, transparent 50%, nav-top-color 50%)
+
+.top-menu__item--cart .top-menu__link
+  display inline-block
+  vertical-align top
+  min-height 50px
+  padding 0 15px 0 10px
+  background-color nav-top-color
+
+.top-menu__icon
+  transform translateY(19px)
+
+.top-menu__count
+  flex()
+  justify-content center
+  align-items center
+  font-size body-font-size - 5px
+  line-height body-line-height + 4px
+  font-weight font-bold
+  position absolute
+  top 11px
+  left 22px
+  width 14px
+  height 14px
+  color text-white
+  background-color title-color
+  border-radius 50%
+  

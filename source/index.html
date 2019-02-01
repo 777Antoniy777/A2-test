@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>A2: тестовое</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet">
@@ -21,30 +21,41 @@
   <body>
     <header class="main-header">
       <div class="main-header__top-wrapper top-menu">
-        <ul class="top-menu__list">
+        <div class="site-wrapper">
+        <ul class="top-menu__list top-menu__list--settings">
           <li class="top-menu__item">
             <p class="top-menu__description">Language: <a class="top-menu__link top-menu__link--language" href="#">English</a></p>
           </li>
           <li class="top-menu__item">
             <p class="top-menu__description">Currency: <a class="top-menu__link top-menu__link--currency" href="#">$ Dollar</a></p>
           </li>
+        </ul>
+        <ul class="top-menu__list top-menu__list--user">  
           <li class="top-menu__item">
             <a class="top-menu__link" href="#">My Account</a>
           </li>
           <li class="top-menu__item">
-            <p class="top-menu__description">
-              <a class="top-menu__link" href="#">Login</a>/
-              <a class="top-menu__link" href="#">Register</a>
-            </p>
+            <ul class="top-menu__user-list">
+              <li class="top-menu__user-item">
+                <a class="top-menu__link" href="#">Login</a>/
+              </li>
+              <li class="top-menu__user-item">
+                <a class="top-menu__link" href="#">Register</a>
+              </li>
+            </ul>
           </li>
-          <li class="top-menu__item">
-            <a href="#">
+          <li class="top-menu__item top-menu__item--cart">
+            <a class="top-menu__link" href="#">
               <span class="visually-hidden">Корзина</span>
-              <!--иконка-шрифт-->
-              <i></i>
+              <!--иконка-корзина-->
+              <span class="top-menu__count">1</span>
+              <svg class="top-menu__icon" width="20" height="17">
+                <use xlink:href="#shopping-cart"/>
+              </svg>
             </a>
           </li>
         </ul>
+      </div>
       </div>
       <div class="main-header__navigation-wrapper main-navigation">
         <nav class="main-navigation__nav">
