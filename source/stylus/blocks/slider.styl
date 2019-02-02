@@ -1,0 +1,116 @@
+.slider
+  width 100%
+  min-height: 780px
+  background-color lightblue
+  background-image url("../img/slider-background.jpg")
+  background-repeat repeat-x
+  background-position 50% 0
+
+.slider .site-wrapper
+  flex()
+  justify-content center
+  position relative
+
+.slider__wrapper
+  width 719px
+  overflow hidden
+  margin-top 277px
+
+.slider__list
+  list()
+  flex()
+  width 300%
+
+.slider__item
+  flex(flex, column)
+  font-family font-mont
+  font-weight font-bold
+  text-align center
+  margin 0 40px
+  color text-white
+
+.slider__title
+  position relative
+  font-size body-font-size + 46px
+  line-height body-line-height + 48px
+  font-weight font-bold
+  margin 0
+  margin-top 13px
+  letter-spacing 0.17px
+  order 2
+
+  &::before
+    pseudo()
+    bottom -31px
+    left 184px
+    width 276px
+    height 10px
+    background-image url("../img/svg/line.svg")
+    background-repeat no-repeat
+    background-position 0 0
+    z-index 6
+  
+  &::after
+    pseudo()
+    bottom -36px
+    left 311px
+    width 19px
+    height 20px
+    background-image url("../img/svg/glass-martini.svg")
+    background-repeat no-repeat
+    background-position 0 0
+    z-index 6
+
+.slider__description
+  font-size body-font-size + 6px
+  line-height body-line-height + 8px
+  text-transform uppercase
+  margin 0
+  order 1
+
+  &--total
+    font-family font-droid
+    font-size body-font-size
+    line-height body-line-height + 10px
+    font-weight font-regular
+    text-transform none
+    margin-top 53px
+    order 3
+
+.slider__button
+  position absolute
+  width 100px
+  height 100px
+  background-color transparent
+  border 6px solid text-white
+  border-radius 50%
+  cursor pointer
+  z-index 5
+
+  &--left
+    top 352px
+    left -50px
+    &::before
+      pseudo()
+      top 21px
+      left 25px
+      width 28px
+      height 48px
+      background-image url("../img/svg/angle-left.svg")
+      background-repeat no-repeat
+      background-position 0 0
+      z-index 6
+  
+  &--right
+    top 352px
+    right -50px
+    &::before
+      pseudo()
+      top 21px
+      left 36px
+      width 28px
+      height 48px
+      background-image url("../img/svg/angle-right.svg")
+      background-repeat no-repeat
+      background-position 0 0
+      z-index 6

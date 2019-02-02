@@ -1,0 +1,95 @@
+.main-navigation
+  min-height 122px
+
+.main-navigation
+.main-navigation__nav
+  flex()
+  justify-content space-between
+  align-items flex-start
+
+.main-navigation__nav
+.main-navigation__list
+  width 500px
+  box-sizing border-box
+
+.main-navigation__list
+  list()
+  flex()
+  align-items flex-start
+  flex-wrap wrap
+
+.main-navigation__nav--left
+  padding-top 47px
+  .main-navigation__list
+    justify-content flex-end
+    .main-navigation__item
+      margin-right 68px
+      margin-left 8px
+
+.main-navigation__nav--right
+  padding-top 47px
+  .main-navigation__list
+    justify-content flex-start
+    .main-navigation__item
+      margin-left 75px
+      margin-right 1px
+
+.main-navigation__item
+  position relative
+  max-width 93px
+  margin-top 8px
+  margin-bottom 9px
+
+.main-navigation__item:not(:first-child)::after
+    pseudo()
+    top 7px
+    left -38px
+    width 4px
+    height 4px
+    background-color nav-color
+    border-radius 50%
+
+.main-navigation__link
+  link()
+  font-family font-mont
+  font-size body-font-size + 2px
+  line-height body-line-height + 4px
+  font-weight font-bold
+  text-transform uppercase
+  color nav-color
+
+  &--active
+    color title-color
+    &::before
+      pseudo()
+      top 26px
+      left 10px
+      width 36px
+      height 3px
+      background-color title-color
+
+.main-navigation__logo-header-wrapper
+.main-navigation__logo-header-inner-wrapper
+  flex()
+  justify-content center
+  position relative
+  width 170px
+  background-color title-color
+
+.main-navigation__logo-header-wrapper
+  &::before
+    pseudo()
+    bottom -55px
+    left 0px
+    width 100%
+    height 55px
+    background-image linear-gradient(16deg, transparent 50%, title-color 50%)
+
+  &::after
+    pseudo()
+    bottom -55px
+    left 0px
+    width 100%
+    height 55px
+    background-image linear-gradient(-16deg, transparent 50%, title-color 50%)
+

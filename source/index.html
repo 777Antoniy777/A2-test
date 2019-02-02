@@ -57,11 +57,12 @@
         </ul>
       </div>
       </div>
+      <div class="site-wrapper">
       <div class="main-header__navigation-wrapper main-navigation">
-        <nav class="main-navigation__nav">
+        <nav class="main-navigation__nav main-navigation__nav--left">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--active" href="#">Home</a>
+              <a class="main-navigation__link main-navigation__link--active">Home</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="#">Menu</a>
@@ -71,17 +72,17 @@
             </li>
           </ul>
         </nav>
-        <div class="main-header__logo-header-wrapper">
+        <div class="main-navigation__logo-header-wrapper">
           <!--добавить надпись и фон с тенью наверху-->
-          <img class="main-header__logo-header" src="img/svg/logo-header.svg" width="134" height="119" alt="Логотопи ресторана Michello">
+          <img class="main-navigation__logo-header" src="img/svg/logo-header.svg" width="134" height="119" alt="Логотопи ресторана Michello">
         </div>
-        <nav class="main-navigation__nav">
+        <nav class="main-navigation__nav main-navigation__nav--right">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="#">Blog</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">About us </a>
+              <a class="main-navigation__link" href="#">About us</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="#">Contact</a>
@@ -89,36 +90,39 @@
           </ul>
         </nav>
       </div>
+    </div>
     </header>
     <main class="main">
       <section class="slider">
         <h1 class="visually-hidden">Ресторан Michello</h1>
+        <div class="site-wrapper">
         <div class="slider__wrapper">
           <ul class="slider__list">
             <li class="slider__item">
               <h2 class="slider__title">Welcome to Michello</h2>
               <p class="slider__description">Messages</p>
-              <p class="slider__description slider__description--total">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet. Nunc sed massa condimentum, dapibus nisi gravida, commodo augue. Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
+              <p class="slider__description slider__description--total">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.<br> Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.<br> Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
             </li>
             <li class="slider__item">
               <h2 class="slider__title">Welcome to Michello</h2>
               <p class="slider__description">Messages</p>
-              <p class="slider__description slider__description--total">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet. Nunc sed massa condimentum, dapibus nisi gravida, commodo augue. Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
+              <p class="slider__description slider__description--total">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.<br> Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.<br> Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
             </li>
           </ul>
-          <button class="slider__button slider__button--left"><span class="visually-hidden">Предыдущий слайд</span></button>
-          <button class="slider__button slider__button--right"><span class="visually-hidden">Следующий слайд</span></button>
         </div>
+        <button class="slider__button slider__button--left"><span class="visually-hidden">Предыдущий слайд</span></button>
+        <button class="slider__button slider__button--right"><span class="visually-hidden">Следующий слайд</span></button>
+      </div>
       </section>
-      <section class="contacts">
+      <section class="contacts site-wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper contacts__wrapper--invitation">
           <span class="contacts__description contacts__description--date">Tuesday, 21, 2015</span>
-          <p class="contacts__description">Welcome back  to Michello,<span>anhgreen</span></p>
+          <p class="contacts__description">Welcome back to Michello, <span>anhgreen</span></p>
         </div>
         <div class="contacts__wrapper">
           <p class="contacts__description">Call us for knew today’s menu</p>
-          <a class="contacts__link" href="#">tel.:+123 456 7890</a>
+          <a class="contacts__link" href="tel.:+123 456 7890">+123 456 7890</a>
         </div>
         <div class="contacts__wrapper">
           <p class="contacts__description">Or chat with us for knew today’s menu</p>
