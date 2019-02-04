@@ -1,0 +1,69 @@
+.popup-special
+  display none
+  position absolute
+  top -122px
+  right -36px
+  font-family font-mont
+  font-weight font-regular
+  width 166px
+  min-height 94px
+  padding 2px 7px 2px 13px
+  color title-goods-color
+  background-color background-popup
+  box-sizing border-box
+  z-index 2
+
+.popup-details
+  position absolute
+  bottom -84px
+  left 46px
+  font-family font-mont
+  font-weight font-regular
+  width 342px
+  min-height 95px
+  padding 2px 7px 2px 13px
+  color title-goods-color
+  background-color background-popup
+  box-sizing border-box
+  z-index 2
+
+.popup-special
+.popup-details
+  &::before
+    pseudo()
+    width 16px
+    height 16px
+    background-color background-popup
+    transform translateX(-50%) rotate(45deg)
+    z-index -1
+
+.popup-special
+  &::before
+    bottom -4px
+    left 50%
+
+.popup-details
+  &::before
+    top -2px
+    left 24%
+
+.popup-special h2
+.popup-details h2
+  font-size body-font-size + 2px
+  line-height body-line-height + 2px
+  margin-top 9px
+  margin-bottom 0
+
+.popup-special p
+.popup-details p
+  font-size body-font-size - 3px
+  line-height body-line-height + 1px
+  margin-top 7px
+  margin-bottom 0
+
+.popup-details p
+  margin-top 6px
+  margin-left 2px
+
+.hidden
+  display none

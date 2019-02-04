@@ -4,22 +4,20 @@
   background-color background-top-color
 
   &::before
-    pseudo()
-    top 0px
-    left 50%
-    width 170px
-    height 100%
-    background-color title-color
-    transform translateX(-170px/2)
-
   &::after
     pseudo()
     top 0px
     left 50%
     width 170px
+    transform translateX(-170px/2)
+
+  &::before
+    height 100%
+    background-color title-color
+
+  &::after
     height 7px
     background-color #ac4f3d
-    transform translateX(-170px/2)
 
 .top-menu .site-wrapper
   flex()
@@ -65,11 +63,16 @@
   color subtitle-color
 
 .top-menu__link
-  link()
+  link(none, subtitle-color)
   font-family font-mont
   font-size body-font-size - 1px
   line-height body-line-height + 4px
-  color subtitle-color
+
+  &:hover
+    color text-white
+
+  &:active
+    color rgba(text-white, 0.5)
 
   &--language
   &--currency
@@ -77,6 +80,12 @@
     font-style font-italic
     color nav-top-color
     margin-left 1px
+
+    &:hover
+      color rgba(nav-top-color, 0.7)
+
+    &:active
+      color rgba(text-white, 0.5)
 
 .top-menu__description 
   margin 14px 0 0
@@ -87,19 +96,17 @@
   margin 0 0 0 33px
 
   &::before
-    pseudo()
-    bottom -17px
-    left 0px
-    width 100%
-    height 17px
-    background-image linear-gradient(21deg, transparent 50%, nav-top-color 50%)
-
   &::after
     pseudo()
     bottom -17px
     left 0px
     width 100%
     height 17px
+
+  &::before
+    background-image linear-gradient(21deg, transparent 50%, nav-top-color 50%)
+
+  &::after
     background-image linear-gradient(-21deg, transparent 50%, nav-top-color 50%)
 
 .top-menu__item--cart .top-menu__link
@@ -111,6 +118,12 @@
 
 .top-menu__icon
   transform translateY(19px)
+
+  &:hover
+    fill rgba(text-white, 0.7)
+
+  &:active
+    fill rgba(text-white, 0.7)
 
 .top-menu__count
   flex()

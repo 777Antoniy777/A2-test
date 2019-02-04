@@ -41,13 +41,13 @@
   margin-bottom 9px
 
 .main-navigation__item:not(:first-child)::after
-    pseudo()
-    top 7px
-    left -38px
-    width 4px
-    height 4px
-    background-color nav-color
-    border-radius 50%
+  pseudo()
+  top 7px
+  left -38px
+  width 4px
+  height 4px
+  background-color nav-color
+  border-radius 50%
 
 .main-navigation__link
   link()
@@ -58,8 +58,15 @@
   text-transform uppercase
   color nav-color
 
+  &:hover
+    color title-color
+
+  &:active
+    color active-color
+
   &--active
     color title-color
+
     &::before
       pseudo()
       top 26px
@@ -67,6 +74,9 @@
       width 36px
       height 3px
       background-color title-color
+
+  &--active:active
+    color title-color
 
 .main-navigation__logo-header-wrapper
 .main-navigation__logo-header-inner-wrapper
@@ -78,18 +88,16 @@
 
 .main-navigation__logo-header-wrapper
   &::before
-    pseudo()
-    bottom -55px
-    left 0px
-    width 100%
-    height 55px
-    background-image linear-gradient(16deg, transparent 50%, title-color 50%)
-
   &::after
     pseudo()
     bottom -55px
     left 0px
     width 100%
     height 55px
+
+  &::before
+    background-image linear-gradient(16deg, transparent 50%, title-color 50%)
+
+  &::after
     background-image linear-gradient(-16deg, transparent 50%, title-color 50%)
 

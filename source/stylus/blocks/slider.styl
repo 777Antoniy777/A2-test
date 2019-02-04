@@ -3,7 +3,7 @@
   min-height: 780px
   background-color lightblue
   background-image url("../img/slider-background.jpg")
-  background-repeat repeat-x
+  background-repeat repeat
   background-position 50% 0
 
 .slider .site-wrapper
@@ -26,7 +26,7 @@
   font-family font-mont
   font-weight font-bold
   text-align center
-  margin 0 40px
+  margin 0 38px
   color text-white
 
 .slider__title
@@ -40,26 +40,25 @@
   order 2
 
   &::before
+  &::after
     pseudo()
+    background-repeat no-repeat
+    background-position 0 0
+    z-index 6
+
+  &::before
     bottom -31px
     left 184px
     width 276px
     height 10px
     background-image url("../img/svg/line.svg")
-    background-repeat no-repeat
-    background-position 0 0
-    z-index 6
   
   &::after
-    pseudo()
     bottom -36px
     left 311px
     width 19px
     height 20px
     background-image url("../img/svg/glass-martini.svg")
-    background-repeat no-repeat
-    background-position 0 0
-    z-index 6
 
 .slider__description
   font-size body-font-size + 6px
@@ -87,9 +86,14 @@
   cursor pointer
   z-index 5
 
+  &:hover
+  &:active
+    border 6px solid #000
+
   &--left
     top 352px
     left -50px
+
     &::before
       pseudo()
       top 21px
@@ -100,10 +104,15 @@
       background-repeat no-repeat
       background-position 0 0
       z-index 6
+
+    &:hover::before
+    &:active::before
+      background-image url("../img/svg/angle-left-black.svg")
   
   &--right
     top 352px
     right -50px
+
     &::before
       pseudo()
       top 21px
@@ -114,3 +123,7 @@
       background-repeat no-repeat
       background-position 0 0
       z-index 6
+
+    &:hover::before
+    &:active::before
+      background-image url("../img/svg/angle-right-black.svg")

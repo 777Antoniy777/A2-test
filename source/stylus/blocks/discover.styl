@@ -1,0 +1,305 @@
+.discover
+  font-family font-mont
+  background-color background-discover-color
+
+.discover .site-wrapper
+  flex(flex, column)
+  justify-content center
+  align-items center
+  flex-wrap wrap
+
+.discover__title
+  font-family font-droid
+  font-size body-font-size + 46px
+  line-height body-line-height + 48px
+  font-weight font-regular
+  font-style font-italic
+  text-align center
+  width 400px
+  margin-top 26px
+  margin-bottom 0
+  color title-color
+
+.discover__description
+  position relative
+  font-size body-font-size + 2px
+  line-height body-line-height + 4px
+  font-weight font-bold
+  text-transform uppercase
+  text-align center
+  width 400px
+  margin-top 0
+  margin-bottom 28px
+  color subtitle-color
+
+  &::before
+  &::after
+    pseudo()
+    width 61px
+    height 12px
+    background-image url("../img/svg/line-grey.svg")
+    background-repeat no-repeat
+    background-position 0 0
+    z-index 2
+
+  &::before
+    top 6px
+    left 64px
+
+  &::after
+    top 3px
+    right 65px
+    transform rotate(180deg)
+
+.discover__links-list
+.discover__food-list
+.discover__food-button-list
+  list()
+  flex()
+  justify-content flex-start
+  flex-wrap wrap
+
+.discover__links-list
+  width 400px
+  margin-bottom 45px
+
+/* stylelint-disable */
+_:-ms-fullscreen, :root .discover__links-list {
+  width 410px
+}
+/* stylelint-enable */
+
+.discover__links-item
+  margin-right 11px
+  margin-bottom 10px
+
+.discover__links-item:nth-of-type(4n)
+  margin-right 0
+
+.discover__food-list
+  padding 0 7px 0 6px
+
+/* stylelint-disable */
+_:-ms-fullscreen, :root .discover__food-list {
+  width 1170px
+}
+/* stylelint-enable */
+
+.discover__food-item
+  flex(flex, column)
+  align-items center
+  width 258px
+  min-height 388px
+  margin-left 41.5px
+  margin-bottom 50px
+
+/* stylelint-disable */
+_:-ms-fullscreen, :root .discover__food-item {
+  flex(flex, column)
+  width 258px
+}
+/* stylelint-enable */
+
+.discover__food-item:nth-of-type(4n + 1)
+  margin-left 0
+
+/* stylelint-disable */
+_:-ms-fullscreen, :root .discover__food-item:nth-of-type(4n + 1) {
+  margin-left 0
+}
+/* stylelint-enable */
+
+.discover__link
+  link(none, subtitle-color)
+  display inline-block
+  vertical-align top
+  font-size body-font-size - 1px
+  line-height body-line-height - 2px
+  font-weight font-regular
+  padding 8px 22px
+  background-color #d5d1d1
+  border-radius 20px
+
+  &:hover
+  &--active
+    color text-white
+    background-color subtitle-color
+
+  &:active
+    background-color rgba(subtitle-color, 0.5)
+
+  &--active:active
+    background-color subtitle-color
+
+.discover__food-inner-wrapper
+  padding 0 6px
+
+/* stylelint-disable */
+_:-ms-fullscreen, :root .discover__food-inner-wrapper {
+  width 258px
+}
+/* stylelint-enable */
+
+.discover__food-subtitle
+  font-size body-font-size + 4px
+  line-height body-line-height + 6px
+  font-weight font-bold
+  padding-left 2px
+  margin-top 14px
+  margin-bottom 0
+  a
+    link(none, title-goods-color)
+
+    &:hover
+      color title-color
+    
+    &:active
+      color active-color
+
+.discover__food-description
+  font-family font-droid
+  font-size body-font-size - 2px
+  line-height body-line-height + 2px
+  font-weight font-regular
+  font-style font-italic
+  padding-left 3px
+  margin-top 11px
+  margin-bottom 8px
+  color subtitle-color
+
+.discover__food-button-wrapper
+.discover__food-price-wrapper
+  flex()
+  justify-content space-between
+  flex-wrap wrap
+
+.discover__food-button-wrapper
+  align-items baseline
+  padding-bottom 4px
+  border-bottom 1px dotted subtitle-color
+
+.discover__food-button-description
+  font-size body-font-size - 1px
+  line-height body-line-height - 2px
+  font-weight font-bold
+  width 120px
+  padding-left 3px
+  color subtitle-color
+
+.discover__food-button-list
+  width 117px
+
+.discover__food-button-item
+  margin-right 5px
+
+.discover__food-price-wrapper
+  align-items flex-start
+  position relative
+  margin-top 15px
+
+.discover__food-price-description
+  font-size body-font-size + 4px
+  line-height body-line-height + 6px
+  font-weight font-bold
+  width 110px
+  padding-top 4px
+  padding-left 2px
+  color title-color
+  letter-spacing 2px
+
+.discover__food-price-button
+  position relative
+  font-size body-font-size - 3px
+  line-height body-line-height - 2px
+  font-weight font-regular
+  width 109px
+  min-height 32px
+  padding 0 13px
+  text-align right 
+  color subtitle-color
+  background-color text-white
+  border 1px solid subtitle-color
+  border-radius 3px
+  box-sizing border-box
+  cursor pointer
+
+  &:hover
+    color text-white
+    background-color subtitle-color
+
+  &:active
+    color text-white
+    background-color rgba(subtitle-color, 0.7)
+
+  &::before
+    pseudo()
+    top 9px
+    left 11px
+    width 13px
+    height 12px
+    background-image url("../img/svg/shopping-food-cart.svg")
+    background-repeat no-repeat
+    background-position 0 0
+    z-index 1
+    
+  &:hover::before
+    background-image url("../img/svg/shopping-food-cart-hover.svg")
+
+  &:active::before
+    background-image url("../img/svg/shopping-food-cart-hover.svg")
+
+.discover__food-price-wrapper--selected
+  display none
+  position absolute
+  top 0
+  right 0;
+  margin-top 0
+  background-color text-white
+  z-index 2
+
+.discover__food-price-wrapper--selected .discover__food-price-button
+  width 89px
+  padding-right 10px
+  margin-right 5px
+  color text-white
+  background-color subtitle-color
+  border none
+
+  &:hover
+    background-color rgba(subtitle-color, 0.7)
+
+  &:active
+    background-color rgba(subtitle-color, 0.5)
+
+  &::before
+    top 9px
+    left 13px
+    width 14px
+    height 14px
+    background-image url("../img/svg/checkbox-on.svg")
+    background-repeat no-repeat
+    background-position 0 0
+    z-index 1
+
+  &--close
+    width 32px
+    margin-right 0
+    color text-white
+    background-color title-color
+
+    &:hover
+      background-color rgba(title-color, 0.7)
+
+    &:active
+      background-color rgba(title-color, 0.5)
+
+    &::before
+      top 9px
+      left 50%
+      width 11px
+      height 14px
+      background-image url("../img/svg/times.svg")
+      background-repeat no-repeat
+      background-position 0 0
+      transform translateX(-50%)
+      z-index 1

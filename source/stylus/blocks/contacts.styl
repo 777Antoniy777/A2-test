@@ -1,23 +1,96 @@
 .contacts
+  background-color background-discover-color
+
+.contacts .site-wrapper
   flex()
   font-family font-mont
-  margin-top -46px
+  transform translateY(-46px)
 
 .contacts__wrapper
   flex(flex, column)
+  justify-content center
   align-items center
   width 415px
   min-height 170px
   padding 0 10px
-  background-color lightblue
+  background-color text-white
   box-sizing border-box
 
   &--invitation
+    align-items flex-start
+    padding-top 8px
     background-color nav-top-color
 
   &--invitation
   &--contact
     width 170px
+
+/* stylelint-disable */
+_:-ms-fullscreen, :root .contacts__wrapper--invitation .contacts__description {
+  width 150px
+}
+/* stylelint-enable */
+
+.contacts__wrapper:nth-of-type(2) .contacts__description
+  width 270px
+  padding-left 56px
+
+.contacts__wrapper:nth-of-type(2) .contacts__link
+  width 270px
+  padding-left 52px
+
+  &::before
+  &::after
+    pseudo()
+
+  &::before
+    bottom -12px
+    left -16px
+    width 54px
+    height 54px
+    background-color title-color
+    border-radius 50%
+    z-index 1
+
+  &::after
+    bottom 0
+    left -4px
+    width 25px
+    height 30px
+    background-image url("../img/svg/phone.svg")
+    background-repeat no-repeat
+    background-position 0 0
+    transform rotate(90deg)
+    z-index 2
+
+.contacts__wrapper:nth-of-type(3) .contacts__description
+.contacts__wrapper:nth-of-type(3) .contacts__link
+  width 270px
+  padding-left 50px
+
+.contacts__wrapper:nth-of-type(3) .contacts__link
+  &::before
+  &::after
+    pseudo()
+
+  &::before
+    bottom -12px
+    left -18px
+    width 54px
+    height 54px
+    background-color title-color
+    border-radius 50%
+    z-index 1
+
+  &::after
+    bottom -1px
+    left -4px
+    width 30px
+    height 30px
+    background-image url("../img/svg/skype.svg")
+    background-repeat no-repeat
+    background-position 0 0
+    z-index 2
 
 .contacts__description
 .contacts__wrapper--contact span
@@ -29,26 +102,38 @@
 .contacts__wrapper--invitation .contacts__description
   font-family font-droid
   font-size body-font-size + 7px
-  line-height body-line-height + 9px
+  line-height body-line-height + 13px
   font-weight font-regular
   font-style font-italic
+  margin-left 5px
   color #a28026
   span 
+    font-weight font-bold
     color title-color
 
   &--date
     font-family font-mont
     font-size body-font-size - 1px
-    line-height body-line-height - 2px
-    font-weight font-regular
+    line-height body-line-height + 2px
+    font-weight font-bold
     font-style font-normal
+    margin-left 7px
+    margin-bottom 7px
 
 .contacts__link
   link(none, title-color)
+  position relative
   font-family font-droid
   font-size body-font-size + 18px
   line-height body-line-height + 20px
   font-weight font-bold
+  margin-bottom 16px
+
+  &:hover
+    color rgba(title-color, 0.7)
+
+  &:active
+    color active-color
 
 .contacts__wrapper--contact .contacts__link
   link()
@@ -59,4 +144,14 @@
   line-height body-line-height - 2px
   font-weight font-bold
   text-transform uppercase
+  text-align center
+  padding 12px 5px 5px
+  margin 15px 2px 0 0
   background-color title-color
+  box-sizing border-box
+
+  &:hover
+    background-color rgba(title-color, 0.7)
+
+  &:active
+    background-color active-color

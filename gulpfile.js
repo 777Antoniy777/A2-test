@@ -105,7 +105,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("svgdel", function() {
-  return del("build/img/svg/sprite/*.svg");
+  return del("build/img/svg/sprite");
 });
 
 gulp.task("build" ,gulp.series(

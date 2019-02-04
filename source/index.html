@@ -19,482 +19,749 @@
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
+    <!--Хедер сайта-->
     <header class="main-header">
       <div class="main-header__top-wrapper top-menu">
         <div class="site-wrapper">
-        <ul class="top-menu__list top-menu__list--settings">
-          <li class="top-menu__item">
-            <p class="top-menu__description">Language: <a class="top-menu__link top-menu__link--language" href="#">English</a></p>
-          </li>
-          <li class="top-menu__item">
-            <p class="top-menu__description">Currency: <a class="top-menu__link top-menu__link--currency" href="#">$ Dollar</a></p>
-          </li>
-        </ul>
-        <ul class="top-menu__list top-menu__list--user">  
-          <li class="top-menu__item">
-            <a class="top-menu__link" href="#">My Account</a>
-          </li>
-          <li class="top-menu__item">
-            <ul class="top-menu__user-list">
-              <li class="top-menu__user-item">
-                <a class="top-menu__link" href="#">Login</a>/
+          <ul class="top-menu__list top-menu__list--settings">
+            <li class="top-menu__item">
+              <p class="top-menu__description">Language: <a class="top-menu__link top-menu__link--language" href="#">English</a></p>
+            </li>
+            <li class="top-menu__item">
+              <p class="top-menu__description">Currency: <a class="top-menu__link top-menu__link--currency" href="#">$ Dollar</a></p>
+            </li>
+          </ul>
+          <ul class="top-menu__list top-menu__list--user">
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">My Account</a>
+            </li>
+            <li class="top-menu__item">
+              <ul class="top-menu__user-list">
+                <li class="top-menu__user-item">
+                  <a class="top-menu__link" href="#">Login</a>/
+                </li>
+                <li class="top-menu__user-item">
+                  <a class="top-menu__link" href="#">Register</a>
+                </li>
+              </ul>
+            </li>
+            <li class="top-menu__item top-menu__item--cart">
+              <a class="top-menu__link" href="#">
+                <span class="visually-hidden">Корзина</span>
+                <!--иконка-корзина-->
+                <span class="top-menu__count">0</span>
+                <svg class="top-menu__icon" width="20" height="17">
+                  <use xlink:href="#shopping-cart"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Главная навигация-->
+      <div class="site-wrapper">
+        <div class="main-header__navigation-wrapper main-navigation">
+          <nav class="main-navigation__nav main-navigation__nav--left">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link main-navigation__link--active">Home</a>
               </li>
-              <li class="top-menu__user-item">
-                <a class="top-menu__link" href="#">Register</a>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Menu</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Services</a>
               </li>
             </ul>
-          </li>
-          <li class="top-menu__item top-menu__item--cart">
-            <a class="top-menu__link" href="#">
-              <span class="visually-hidden">Корзина</span>
-              <!--иконка-корзина-->
-              <span class="top-menu__count">1</span>
-              <svg class="top-menu__icon" width="20" height="17">
-                <use xlink:href="#shopping-cart"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      </div>
-      <div class="site-wrapper">
-      <div class="main-header__navigation-wrapper main-navigation">
-        <nav class="main-navigation__nav main-navigation__nav--left">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--active">Home</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Menu</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Services</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="main-navigation__logo-header-wrapper">
-          <!--добавить надпись и фон с тенью наверху-->
-          <img class="main-navigation__logo-header" src="img/svg/logo-header.svg" width="134" height="119" alt="Логотопи ресторана Michello">
+          </nav>
+          <div class="main-navigation__logo-header-wrapper">
+            <img class="main-navigation__logo-header" src="img/svg/logo-header.svg" width="134" height="119" alt="Логотопи ресторана Michello">
+          </div>
+          <nav class="main-navigation__nav main-navigation__nav--right">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Blog</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">About us</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-navigation__nav main-navigation__nav--right">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Blog</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">About us</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
     </header>
     <main class="main">
+      <!--Слайдер-->
       <section class="slider">
         <h1 class="visually-hidden">Ресторан Michello</h1>
         <div class="site-wrapper">
-        <div class="slider__wrapper">
-          <ul class="slider__list">
-            <li class="slider__item">
-              <h2 class="slider__title">Welcome to Michello</h2>
-              <p class="slider__description">Messages</p>
-              <p class="slider__description slider__description--total">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.<br> Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.<br> Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
-            </li>
-            <li class="slider__item">
-              <h2 class="slider__title">Welcome to Michello</h2>
-              <p class="slider__description">Messages</p>
-              <p class="slider__description slider__description--total">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.<br> Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.<br> Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
-            </li>
-          </ul>
-        </div>
-        <button class="slider__button slider__button--left"><span class="visually-hidden">Предыдущий слайд</span></button>
-        <button class="slider__button slider__button--right"><span class="visually-hidden">Следующий слайд</span></button>
-      </div>
-      </section>
-      <section class="contacts site-wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper contacts__wrapper--invitation">
-          <span class="contacts__description contacts__description--date">Tuesday, 21, 2015</span>
-          <p class="contacts__description">Welcome back to Michello, <span>anhgreen</span></p>
-        </div>
-        <div class="contacts__wrapper">
-          <p class="contacts__description">Call us for knew today’s menu</p>
-          <a class="contacts__link" href="tel.:+123 456 7890">+123 456 7890</a>
-        </div>
-        <div class="contacts__wrapper">
-          <p class="contacts__description">Or chat with us for knew today’s menu</p>
-          <a class="contacts__link" href="#">howdy.michello</a>
-        </div>
-        <div class="contacts__wrapper contacts__wrapper--contact">
-          <span>Or</span>
-          <a class="contacts__link" href="#">Contact us</a>
+          <div class="slider__wrapper">
+            <ul class="slider__list">
+              <li class="slider__item slider__item--first">
+                <h2 class="slider__title">Welcome to Michello</h2>
+                <p class="slider__description">Messages</p>
+                <p class="slider__description slider__description--total">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.<br> Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.<br> Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
+              </li>
+              <li class="slider__item slider__item--second">
+                <h2 class="slider__title">Welcome to Michello</h2>
+                <p class="slider__description">Messages</p>
+                <p class="slider__description slider__description--total">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.<br> Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.<br> Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
+              </li>
+              <li class="slider__item slider__item--third">
+                <h2 class="slider__title">Welcome to Michello</h2>
+                <p class="slider__description">Messages</p>
+                <p class="slider__description slider__description--total">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.<br> Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.<br> Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
+              </li>
+            </ul>
+          </div>
+          <button class="slider__button slider__button--left"><span class="visually-hidden">Предыдущий слайд</span></button>
+          <button class="slider__button slider__button--right"><span class="visually-hidden">Следующий слайд</span></button>
         </div>
       </section>
+      <!--Контакты-->
+      <section class="contacts">
+        <div class="site-wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__wrapper contacts__wrapper--invitation">
+            <span class="contacts__description contacts__description--date">Tuesday, 21, 2015</span>
+            <p class="contacts__description">Welcome back to Michello, <span>anhgreen</span></p>
+          </div>
+          <div class="contacts__wrapper">
+            <p class="contacts__description">Call us for knew today’s menu</p>
+            <a class="contacts__link" href="tel:+123 456 7890">+123 456 7890</a>
+          </div>
+          <div class="contacts__wrapper">
+            <p class="contacts__description">Or chat with us for knew today’s menu</p>
+            <a class="contacts__link" href="#">howdy.michello</a>
+          </div>
+          <div class="contacts__wrapper contacts__wrapper--contact">
+            <span>Or</span>
+            <a class="contacts__link" href="#">Contact us</a>
+          </div>
+        </div>
+      </section>
+      <!--Меню 1-->
       <section class="discover">
-        <h2 class="discover__title">Discover</h2>
-        <p class="discover__description">Today’s food</p>
-        <div class="discover__links-wrapper">
-          <ul class="discover__links-list">
-            <li class="discover__links-item">
-              <a class="discover__link discover__link--active" href="#">Trending</a>
-            </li>
-            <li class="discover__links-item">
-              <a class="discover__link" href="#">Sales</a>
-            </li>
-            <li class="discover__links-item">
-              <a class="discover__link" href="#">Disscount</a>
-            </li>
-            <li class="discover__links-item">
-              <a class="discover__link" href="#">Votes</a>
-            </li>
-          </ul>
-        </div>
-        <div class="discover__food-wrapper">
-          <ul class="discover__food-list">
-            <li class="discover__food-item">
-              <a class="discover__food-link" href="#">
-              <img class="discover__food-image" src="" width="258" height="200" alt="Фотография товара">
-              </a>
-              <h3 class="discover__food-subtitle">Seafood Pizza</h3>
-              <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
-              <div class="discover__food-button-wrapper">
-                <p class="discover__food-button-description">Customer Review</p>
-                <!--иконки-звездочки-->
-                <ul class="discover__food-button-list">
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                </ul>
-              </div>
-              <div class="discover__food-price-wrapper">
-                <span class="discover__food-price-description">$25.00</span>
-                <button class="discover__food-price-button">Add to Cart</button>
-                <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
-                  <button class="discover__food-price-button">Selected</button>
-                  <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+        <div class="site-wrapper">
+          <h2 class="discover__title">Discover</h2>
+          <p class="discover__description">Today’s food</p>
+          <div class="discover__links-wrapper">
+            <ul class="discover__links-list">
+              <li class="discover__links-item">
+                <a class="discover__link discover__link--active">Trending</a>
+              </li>
+              <li class="discover__links-item">
+                <a class="discover__link" href="#">Sales</a>
+              </li>
+              <li class="discover__links-item">
+                <a class="discover__link" href="#">Disscount</a>
+              </li>
+              <li class="discover__links-item">
+                <a class="discover__link" href="#">Votes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="discover__food-wrapper">
+            <ul class="discover__food-list">
+              <li class="discover__food-item">
+                <a class="discover__food-link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/pizza@1x.webp 1x, img/pizza@2x.webp 2x">
+                    <img class="discover__food-image" src="img/pizza@1x.jpg" srcset="img/pizza@2x.jpg 2x" width="258" height="200" alt="Фотография товара">
+                  </picture>
+                </a>
+                <div class="discover__food-inner-wrapper">
+                  <h3 class="discover__food-subtitle"><a href="#">Seafood Pizza</a></h3>
+                  <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                  <div class="discover__food-button-wrapper">
+                    <p class="discover__food-button-description">Customer Review</p>
+                    <!--иконки-звездочки-->
+                    <ul class="discover__food-button-list">
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="discover__food-price-wrapper">
+                    <span class="discover__food-price-description">$25.00</span>
+                    <button class="discover__food-price-button discover__food-price-button--add">Add to Cart</button>
+                    <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
+                      <button class="discover__food-price-button discover__food-price-button--select">Selected</button>
+                      <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="discover__food-item">
-              <a class="discover__food-link" href="#">
-              <img class="discover__food-image" src="" width="258" height="200" alt="Фотография товара">
-              </a>
-              <h3 class="discover__food-subtitle">Seafood Pizza</h3>
-              <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
-              <div class="discover__food-button-wrapper">
-                <p class="discover__food-button-description">Customer Review</p>
-                <!--иконки-звездочки-->
-                <ul class="discover__food-button-list">
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                </ul>
-              </div>
-              <div class="discover__food-price-wrapper">
-                <span class="discover__food-price-description">$25.00</span>
-                <button class="discover__food-price-button">Add to Cart</button>
-                <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
-                  <button class="discover__food-price-button">Selected</button>
-                  <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+              </li>
+              <li class="discover__food-item">
+                <a class="discover__food-link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/beef@1x.webp 1x, img/beef@2x.webp 2x">
+                    <img class="discover__food-image" src="img/beef@1x.jpg" srcset="img/beef@2x.jpg 2x" width="258" height="200" alt="Фотография товара">
+                  </picture>
+                </a>
+                <div class="discover__food-inner-wrapper">
+                  <h3 class="discover__food-subtitle"><a href="#">Beef Rice</a></h3>
+                  <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                  <div class="discover__food-button-wrapper">
+                    <p class="discover__food-button-description">Customer Review</p>
+                    <!--иконки-звездочки-->
+                    <ul class="discover__food-button-list">
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="discover__food-price-wrapper">
+                    <span class="discover__food-price-description">$22.00</span>
+                    <button class="discover__food-price-button discover__food-price-button--add">Add to Cart</button>
+                    <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
+                      <button class="discover__food-price-button discover__food-price-button--select">Selected</button>
+                      <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="discover__food-item">
-              <a class="discover__food-link" href="#">
-              <img class="discover__food-image" src="" width="258" height="200" alt="Фотография товара">
-              </a>
-              <h3 class="discover__food-subtitle">Seafood Pizza</h3>
-              <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
-              <div class="discover__food-button-wrapper">
-                <p class="discover__food-button-description">Customer Review</p>
-                <!--иконки-звездочки-->
-                <ul class="discover__food-button-list">
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                </ul>
-              </div>
-              <div class="discover__food-price-wrapper">
-                <span class="discover__food-price-description">$25.00</span>
-                <button class="discover__food-price-button">Add to Cart</button>
-                <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
-                  <button class="discover__food-price-button">Selected</button>
-                  <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+              </li>
+              <li class="discover__food-item">
+                <a class="discover__food-link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/seafoodpasta@1x.webp 1x, img/seafoodpasta@2x.webp 2x">
+                    <img class="discover__food-image" src="img/seafoodpasta@1x.jpg" srcset="img/seafoodpasta@2x.jpg 2x" width="258" height="200" alt="Фотография товара">
+                  </picture>
+                </a>
+                <div class="discover__food-inner-wrapper">
+                  <h3 class="discover__food-subtitle"><a href="#">Seafood Pasta</a></h3>
+                  <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                  <div class="discover__food-button-wrapper">
+                    <p class="discover__food-button-description">Customer Review</p>
+                    <!--иконки-звездочки-->
+                    <ul class="discover__food-button-list">
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="discover__food-price-wrapper">
+                    <span class="discover__food-price-description">$22.00</span>
+                    <button class="discover__food-price-button discover__food-price-button--add">Add to Cart</button>
+                    <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
+                      <button class="discover__food-price-button discover__food-price-button--select">Selected</button>
+                      <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="discover__food-item">
-              <a class="discover__food-link" href="#">
-              <img class="discover__food-image" src="" width="258" height="200" alt="Фотография товара">
-              </a>
-              <h3 class="discover__food-subtitle">Seafood Pizza</h3>
-              <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
-              <div class="discover__food-button-wrapper">
-                <p class="discover__food-button-description">Customer Review</p>
-                <!--иконки-звездочки-->
-                <ul class="discover__food-button-list">
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                </ul>
-              </div>
-              <div class="discover__food-price-wrapper">
-                <span class="discover__food-price-description">$25.00</span>
-                <button class="discover__food-price-button">Add to Cart</button>
-                <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
-                  <button class="discover__food-price-button">Selected</button>
-                  <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+              </li>
+              <li class="discover__food-item">
+                <a class="discover__food-link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/seafoodpasta@1x.webp 1x, img/seafoodpasta@2x.webp 2x">
+                    <img class="discover__food-image" src="img/seafoodpasta@1x.jpg" srcset="img/seafoodpasta@2x.jpg 2x" width="258" height="200" alt="Фотография товара">
+                  </picture>
+                </a>
+                <div class="discover__food-inner-wrapper">
+                  <h3 class="discover__food-subtitle"><a href="#">Seafood Mixed Pasta</a></h3>
+                  <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                  <div class="discover__food-button-wrapper">
+                    <p class="discover__food-button-description">Customer Review</p>
+                    <!--иконки-звездочки-->
+                    <ul class="discover__food-button-list">
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="discover__food-price-wrapper">
+                    <span class="discover__food-price-description">$22.00</span>
+                    <button class="discover__food-price-button discover__food-price-button--add">Add to Cart</button>
+                    <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
+                      <button class="discover__food-price-button discover__food-price-button--select">Selected</button>
+                      <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="discover__food-item">
-              <a class="discover__food-link" href="#">
-              <img class="discover__food-image" src="" width="258" height="200" alt="Фотография товара">
-              </a>
-              <h3 class="discover__food-subtitle">Seafood Pizza</h3>
-              <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
-              <div class="discover__food-button-wrapper">
-                <p class="discover__food-button-description">Customer Review</p>
-                <!--иконки-звездочки-->
-                <ul class="discover__food-button-list">
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                </ul>
-              </div>
-              <div class="discover__food-price-wrapper">
-                <span class="discover__food-price-description">$25.00</span>
-                <button class="discover__food-price-button">Add to Cart</button>
-                <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
-                  <button class="discover__food-price-button">Selected</button>
-                  <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+              </li>
+              <li class="discover__food-item">
+                <a class="discover__food-link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/pizza@1x.webp 1x, img/pizza@2x.webp 2x">
+                    <img class="discover__food-image" src="img/pizza@1x.jpg" srcset="img/pizza@2x.jpg 2x" width="258" height="200" alt="Фотография товара">
+                  </picture>
+                </a>
+                <div class="discover__food-inner-wrapper">
+                  <h3 class="discover__food-subtitle"><a href="#">Seafood Pizza</a></h3>
+                  <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                  <div class="discover__food-button-wrapper">
+                    <p class="discover__food-button-description">Customer Review</p>
+                    <!--иконки-звездочки-->
+                    <ul class="discover__food-button-list">
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="discover__food-price-wrapper">
+                    <span class="discover__food-price-description">$25.00</span>
+                    <button class="discover__food-price-button discover__food-price-button--add">Add to Cart</button>
+                    <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
+                      <button class="discover__food-price-button discover__food-price-button--select">Selected</button>
+                      <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="discover__food-item">
-              <a class="discover__food-link" href="#">
-              <img class="discover__food-image" src="" width="258" height="200" alt="Фотография товара">
-              </a>
-              <h3 class="discover__food-subtitle">Seafood Pizza</h3>
-              <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
-              <div class="discover__food-button-wrapper">
-                <p class="discover__food-button-description">Customer Review</p>
-                <!--иконки-звездочки-->
-                <ul class="discover__food-button-list">
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                </ul>
-              </div>
-              <div class="discover__food-price-wrapper">
-                <span class="discover__food-price-description">$25.00</span>
-                <button class="discover__food-price-button">Add to Cart</button>
-                <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
-                  <button class="discover__food-price-button">Selected</button>
-                  <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+              </li>
+              <li class="discover__food-item">
+                <a class="discover__food-link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/beef@1x.webp 1x, img/beef@2x.webp 2x">
+                    <img class="discover__food-image" src="img/beef@1x.jpg" srcset="img/beef@2x.jpg 2x" width="258" height="200" alt="Фотография товара">
+                  </picture>
+                </a>
+                <div class="discover__food-inner-wrapper">
+                  <h3 class="discover__food-subtitle"><a href="#">Beef Rice</a></h3>
+                  <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                  <div class="discover__food-button-wrapper">
+                    <p class="discover__food-button-description">Customer Review</p>
+                    <!--иконки-звездочки-->
+                    <ul class="discover__food-button-list">
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="discover__food-price-wrapper">
+                    <span class="discover__food-price-description">$22.00</span>
+                    <button class="discover__food-price-button discover__food-price-button--add">Add to Cart</button>
+                    <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
+                      <button class="discover__food-price-button discover__food-price-button--select">Selected</button>
+                      <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="discover__food-item">
-              <a class="discover__food-link" href="#">
-              <img class="discover__food-image" src="" width="258" height="200" alt="Фотография товара">
-              </a>
-              <h3 class="discover__food-subtitle">Seafood Pizza</h3>
-              <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
-              <div class="discover__food-button-wrapper">
-                <p class="discover__food-button-description">Customer Review</p>
-                <!--иконки-звездочки-->
-                <ul class="discover__food-button-list">
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                </ul>
-              </div>
-              <div class="discover__food-price-wrapper">
-                <span class="discover__food-price-description">$25.00</span>
-                <button class="discover__food-price-button">Add to Cart</button>
-                <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
-                  <button class="discover__food-price-button">Selected</button>
-                  <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+              </li>
+              <li class="discover__food-item">
+                <a class="discover__food-link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/seafoodpasta@1x.webp 1x, img/seafoodpasta@2x.webp 2x">
+                    <img class="discover__food-image" src="img/seafoodpasta@1x.jpg" srcset="img/seafoodpasta@2x.jpg 2x" width="258" height="200" alt="Фотография товара">
+                  </picture>
+                </a>
+                <div class="discover__food-inner-wrapper">
+                  <h3 class="discover__food-subtitle"><a href="#">Seafood Pasta</a></h3>
+                  <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                  <div class="discover__food-button-wrapper">
+                    <p class="discover__food-button-description">Customer Review</p>
+                    <!--иконки-звездочки-->
+                    <ul class="discover__food-button-list">
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="discover__food-price-wrapper">
+                    <span class="discover__food-price-description">$22.00</span>
+                    <button class="discover__food-price-button discover__food-price-button--add">Add to Cart</button>
+                    <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
+                      <button class="discover__food-price-button discover__food-price-button--select">Selected</button>
+                      <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="discover__food-item">
-              <a class="discover__food-link" href="#">
-              <img class="discover__food-image" src="" width="258" height="200" alt="Фотография товара">
-              </a>
-              <h3 class="discover__food-subtitle">Seafood Pizza</h3>
-              <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
-              <div class="discover__food-button-wrapper">
-                <p class="discover__food-button-description">Customer Review</p>
-                <!--иконки-звездочки-->
-                <ul class="discover__food-button-list">
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                  <li class="discover__food-button-item"><i></i></li>
-                </ul>
-              </div>
-              <div class="discover__food-price-wrapper">
-                <span class="discover__food-price-description">$25.00</span>
-                <button class="discover__food-price-button">Add to Cart</button>
-                <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
-                  <button class="discover__food-price-button">Selected</button>
-                  <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+              </li>
+              <li class="discover__food-item">
+                <a class="discover__food-link" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/seafoodpasta@1x.webp 1x, img/seafoodpasta@2x.webp 2x">
+                    <img class="discover__food-image" src="img/seafoodpasta@1x.jpg" srcset="img/seafoodpasta@2x.jpg 2x" width="258" height="200" alt="Фотография товара">
+                  </picture>
+                </a>
+                <div class="discover__food-inner-wrapper">
+                  <h3 class="discover__food-subtitle"><a href="#">Seafood Mixed Pasta</a></h3>
+                  <p class="discover__food-description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                  <div class="discover__food-button-wrapper">
+                    <p class="discover__food-button-description">Customer Review</p>
+                    <!--иконки-звездочки-->
+                    <ul class="discover__food-button-list">
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                      <li class="discover__food-button-item">
+                        <svg width="10" height="10">
+                          <use xlink:href="#star-empty"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="discover__food-price-wrapper">
+                    <span class="discover__food-price-description">$22.00</span>
+                    <button class="discover__food-price-button discover__food-price-button--add">Add to Cart</button>
+                    <div class="discover__food-price-wrapper discover__food-price-wrapper--selected">
+                      <button class="discover__food-price-button discover__food-price-button--select">Selected</button>
+                      <button class="discover__food-price-button discover__food-price-button--close"><span class="visually-hidden">Отменить добавление в корзину</span></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="menu">
+      <!--Меню 2-->
+      <section class="menu site-wrapper">
         <h2 class="menu__title">Choose</h2>
-        <p class="menu__description">Today’s Menu</p>
+        <p class="menu__description menu__description--title">Today’s Menu</p>
         <div class="menu__wrapper">
-          <h3 class="menu__subtitle">Starter</h3>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Haemul Pajeon</a></h4>
-                <span class="menu__price">$25.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-            <li class="menu__item">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Pickled Eggs</a></h4>
-                <span class="menu__price">$27.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-            <li class="menu__item menu__item--special">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Russian Salad</a></h4>
-                <span class="menu__price">$27.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-          </ul>
-          <h3 class="menu__subtitle">Main course</h3>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Grilled Chicken Breast</a></h4>
-                <span class="menu__price">$25.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-            <li class="menu__item menu__item--best">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Chicken Stew Vegetables</a></h4>
-                <span class="menu__price">$27.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-            <li class="menu__item">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Pasta Sauce Beef</a></h4>
-                <span class="menu__price">$27.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-          </ul>
-          <h3 class="menu__subtitle">Dessert</h3>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Fruit Cake Grilled</a></h4>
-                <span class="menu__price">$09.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-            <li class="menu__item">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Pie Cake Chocolate</a></h4>
-                <span class="menu__price">$27.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-          </ul>
-          <h3 class="menu__subtitle">Drink</h3>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Hot Chocolate</a></h4>
-                <span class="menu__price">$25.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-            <li class="menu__item">
-              <a href="#">
-              <img class="menu__image" src="" width="116" height="116" alt="Фото меню">
-              </a>
-              <div class="menu__wrapper-item">
-                <h4 class="menu__image-title"><a href="#">Watermelon Smoothie</a></h4>
-                <span class="menu__price">$27.00</span>
-              </div>
-              <p class="menu__description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
-            </li>
-          </ul>
+          <div class="menu__inner-wrapper">
+            <h3 class="menu__subtitle"><a href="#">Starter</a></h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/salad@1x.webp 1x, img/salad@2x.webp 2x">
+                    <img class="menu__image" src="img/salad@1x.jpg" srcset="img/salad@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Haemul Pajeon</a></h4>
+                  <span class="menu__price">$25.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/pizza@1x.webp 1x, img/pizza@2x.webp 2x">
+                    <img class="menu__image" src="img/pizza@1x.jpg" srcset="img/pizza@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Pickled Eggs</a></h4>
+                  <span class="menu__price">$27.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+              <li class="menu__item menu__item--special">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/beef@1x.webp 1x, img/beef@2x.webp 2x">
+                    <img class="menu__image" src="img/beef@1x.jpg" srcset="img/beef@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Russian Salad</a></h4>
+                  <span class="menu__price">$27.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__inner-wrapper">
+            <h3 class="menu__subtitle"><a href="#">Main course</a></h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/seafoodpasta@1x.webp 1x, img/seafoodpasta@2x.webp 2x">
+                    <img class="menu__image" src="img/seafoodpasta@1x.jpg" srcset="img/seafoodpasta@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Grilled Chicken Breast</a></h4>
+                  <span class="menu__price">$25.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+              <li class="menu__item menu__item--best">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/pizza@1x.webp 1x, img/pizza@2x.webp 2x">
+                    <img class="menu__image" src="img/pizza@1x.jpg" srcset="img/pizza@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Chicken Stew Vegetables</a></h4>
+                  <span class="menu__price">$27.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/beef@1x.webp 1x, img/beef@2x.webp 2x">
+                    <img class="menu__image" src="img/beef@1x.jpg" srcset="img/beef@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Pasta Sauce Beef</a></h4>
+                  <span class="menu__price">$27.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__inner-wrapper">
+            <h3 class="menu__subtitle"><a href="#">Dessert</a></h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/salad@1x.webp 1x, img/salad@2x.webp 2x">
+                    <img class="menu__image" src="img/salad@1x.jpg" srcset="img/salad@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Fruit Cake Grilled</a></h4>
+                  <span class="menu__price">$09.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/beef@1x.webp 1x, img/beef@2x.webp 2x">
+                    <img class="menu__image" src="img/beef@1x.jpg" srcset="img/beef@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Pie Cake Chocolate</a></h4>
+                  <span class="menu__price">$27.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__inner-wrapper">
+            <h3 class="menu__subtitle"><a href="#">Drink</a></h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/seafoodpasta@1x.webp 1x, img/seafoodpasta@2x.webp 2x">
+                    <img class="menu__image" src="img/seafoodpasta@1x.jpg" srcset="img/seafoodpasta@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Hot Chocolate</a></h4>
+                  <span class="menu__price">$25.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/salad@1x.webp 1x, img/salad@2x.webp 2x">
+                    <img class="menu__image" src="img/salad@1x.jpg" srcset="img/salad@2x.jpg 2x" width="116" height="116" alt="Фото меню">
+                  </picture>
+                </a>
+                <div class="menu__wrapper-item">
+                  <h4 class="menu__image-title"><a href="#">Watermelon Smoothie</a></h4>
+                  <span class="menu__price">$27.00</span>
+                  <p class="menu__item-description">Nullam quis laoreet mi. Aliquam aliquet posuere urna a lore dolor convallis. Donec lre eget nulla libero.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
-    <div class="popup-special">
+    <!--Попапы-->
+    <div class="popup-special hidden">
       <h2>Special</h2>
       <p>Nam consequat dignissim sem, sed aliquet risus amy dapibus vitae dor lor sit</p>
     </div>
-    <div class="popup-details">
+    <div class="popup-details hidden">
       <h2>Supplier Details</h2>
       <p>Pellentesque eget ullamcorper nisi. In arcu est, gravida nu sit amet nibh in, malesuada tempor dolor. Nam dolor sit consequat dignissim sem, sed aliquet risus.</p>
     </div>
     <div style="display: none;">
       <include src="build/img/svg-sprite.svg"></include>
     </div>
+    <!--Полифилл js-->
+    <script>
+      (function(ELEMENT) {
+        ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
+        ELEMENT.closest = ELEMENT.closest || function closest(selector) {
+          if (!this) return null;
+          if (this.matches(selector)) return this;
+          if (!this.parentElement) {return null}
+          else return this.parentElement.closest(selector)
+        };
+      }(Element.prototype));
+    </script>
+    <script src="js/popup.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>

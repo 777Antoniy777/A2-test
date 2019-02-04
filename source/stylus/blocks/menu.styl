@@ -1,0 +1,226 @@
+.menu
+  flex(flex, column)
+  justify-content center
+  align-items center
+  flex-wrap wrap
+  font-family font-mont
+  margin-top 115px
+
+.menu__title
+  font-family font-droid
+  font-size body-font-size + 46px
+  line-height body-line-height + 48px
+  font-weight font-regular
+  font-style font-italic
+  text-align center
+  width 400px
+  margin-top 26px
+  margin-bottom 0
+  color title-color
+
+.menu__description--title
+  position relative
+  font-size body-font-size + 2px
+  line-height body-line-height + 4px
+  font-weight font-bold
+  text-transform uppercase
+  text-align center
+  width 400px
+  margin-top 0
+  margin-bottom 28px
+  color subtitle-color
+
+  &::before
+  &::after
+    pseudo()
+    width 61px
+    height 12px
+    background-image url("../img/svg/line-grey.svg")
+    background-repeat no-repeat
+    background-position 0 0
+    z-index 2
+
+  &::before
+    top 6px
+    left 64px
+
+  &::after
+    top 3px
+    right 65px
+    transform rotate(180deg)
+
+.menu__wrapper
+.menu__list
+  flex()
+  justify-content space-between
+  flex-wrap wrap
+
+/* stylelint-disable */
+_:-ms-fullscreen, :root .menu__wrapper {
+  width 1170px
+}
+/* stylelint-enable */
+
+.menu__list
+  list()
+  width 585px
+  margin-bottom 3px
+
+.menu__item
+  flex()
+  justify-content flex-start
+  flex-wrap wrap
+  width 585px
+  margin-bottom 28px
+
+/* stylelint-disable */
+_:-ms-fullscreen, :root .menu__item {
+  width 585px
+}
+/* stylelint-enable */
+
+.menu__item--special .menu__price
+  position relative
+  background-color title-color
+
+  &::before
+    content "Special Offer!"
+    position absolute
+    top -20px
+    right 0
+    font-family font-mont
+    font-size body-font-size - 2px
+    line-height body-line-height - 2px
+    font-weight font-regular
+    color title-color
+    letter-spacing 0;
+    width 91px
+    z-index 2
+
+.menu__item--best .menu__price
+  position relative
+  background-color title-bestgoods-color
+
+  &::before
+    content "Best choice!"
+    position absolute
+    top -20px
+    right 0
+    font-family font-mont
+    font-size body-font-size - 2px
+    line-height body-line-height - 2px
+    font-weight font-regular
+    color title-bestgoods-color
+    letter-spacing 0;
+    width 91px
+    z-index 2
+
+.menu__wrapper-item
+  flex()
+  justify-content space-between
+  align-items baseline
+  flex-wrap wrap
+  position relative
+  width 422px
+
+  &::before
+    pseudo()
+    top 20px
+    right 0
+    width 79%
+    height 12px
+    background-color transparent
+    border-bottom 1px dotted subtitle-color
+    z-index -1
+
+.menu__item--special .menu__wrapper-item::before
+  border-bottom 1px dotted title-color
+
+.menu__item--best .menu__wrapper-item::before
+  border-bottom 1px dotted title-bestgoods-color
+
+.menu__inner-wrapper:nth-of-type(2n) .menu__item
+.menu__inner-wrapper:nth-of-type(2n) .menu__subtitle
+  padding-left 35px
+
+.menu__image
+  border 6px solid #e6eced
+  border-radius 50%
+
+.menu__subtitle
+  font-family font-droid
+  font-size body-font-size + 12px
+  line-height body-line-height + 14px
+  font-weight font-regular
+  font-style font-italic
+  width 500px
+  a
+    link(none, title-goods-color)
+
+    &:hover
+      color title-color
+
+    &:active
+      color active-color
+
+.menu__image-title
+  font-family font-mont
+  font-size body-font-size + 4px
+  line-height body-line-height + 4px
+  font-weight font-bold
+  width 310px
+  margin-top 15px
+  margin-bottom 0
+  padding-left 19px
+  a
+    link(none, title-goods-color)
+    padding-right 6px
+    background-color text-white
+
+    &:hover
+      color title-color
+
+    &:active
+      color active-color
+
+.menu__item--best .menu__image-title a
+  color title-bestgoods-color
+
+  &:hover
+    color title-color
+
+  &:active
+    color active-color
+
+.menu__item-description
+  font-family font-droid
+  font-size body-font-size - 2px
+  line-height body-line-height + 4px
+  font-weight font-regular
+  font-style font-italic
+  padding-left 51px
+  margin-top 2px
+  color subtitle-color
+
+  &:hover ~ .popup-details
+    display block
+
+.menu__price
+  display inline-block
+  vertical-align top
+  width 91px
+  min-height 32px
+  font-size body-font-size + 1px
+  line-height body-line-height + 4px
+  font-weight font-bold
+  text-align center
+  padding 6px 10px 0
+  color text-white
+  background-color title-goods-color
+  border-radius 3px
+  letter-spacing 1.8px
+  box-shadow -6px 0 text-white
+  box-sizing border-box
+
+  &:hover ~ .popup-special
+    display block
