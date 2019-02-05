@@ -1,5 +1,5 @@
 {
-  "name": "pink",
+  "name": "a2",
   "version": "15.0.0",
   "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"source/stylus/**/*.styl\"",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start",
@@ -46,7 +46,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
+    "source/stylus/**/*.styl"
   ],
   "engines": {
     "node": "8.12"
